@@ -1,0 +1,85 @@
+/* CSS for the Coffee Addicts Websie */
+:root {
+  light: rgba(255, 255, 255);
+
+  dark: rgba;
+}
+
+/* Body */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #dddddd;
+    color: black !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333333;
+    color: white !important;
+  }
+}
+
+/* Navbar */
+@media (prefers-color-scheme: light) {
+  nav {
+    background-color: #ffffff;
+  }
+  nav li.active a {
+    color: rgb(0, 0, 0) !important;
+  }
+  nav a {
+    color: rgba(0, 0, 0, 0.5) !important;
+    transition: 100ms ease;
+  }
+  nav a:hover {
+    color: rgba(0, 0, 0, 0.7) !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  nav {
+    background-color: #2b2b2b;
+  }
+  nav li.active a {
+    color: rgb(255, 255, 255) !important;
+  }
+  nav a {
+    color: rgba(255, 255, 255, 0.5) !important;
+    transition: 100ms ease;
+  }
+  nav a:hover {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+}
+.navbar-brand:hover {
+  animation: navbrand 1s ease-in-out;
+  transform: scale(1.1);
+}
+@keyframes navbrand {
+  0% {
+    transform: scale(1) rotateZ(0deg);
+  }
+  100% {
+    transform: scale(1.1) rotateZ(1080deg);
+  }
+}
+
+/* Jumbotron */
+@media (prefers-color-scheme: light) {
+  .jumbotron {
+    background-color: white !important;
+  }
+}
+
+@media (prefers-color-shceme: dark) {
+  .jumbotron {
+    background-color: ;
+  }
+}
+
+.jumbotron {
+  box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+  -webkit-box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+  -moz-box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+}
