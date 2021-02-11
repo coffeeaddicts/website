@@ -1,8 +1,7 @@
 /* CSS for the Coffee Addicts Websie */
 :root {
-  light: rgba(255, 255, 255);
-
-  dark: rgba;
+  --light: rgba(255, 255, 255);
+  --dark: #3b3b3b;
 }
 
 /* Body */
@@ -15,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #333333;
+    background-color: #2e2e2e;
     color: white !important;
   }
 }
@@ -39,7 +38,7 @@
 
 @media (prefers-color-scheme: dark) {
   nav {
-    background-color: #2b2b2b;
+    background-color: var(--dark);
   }
   nav li.active a {
     color: rgb(255, 255, 255) !important;
@@ -54,14 +53,22 @@
 }
 .navbar-brand:hover {
   animation: navbrand 1s ease-in-out;
-  transform: scale(1.1);
+  transform: scale(1.15);
+
+  box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+  -webkit-box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+  -moz-box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
 }
 @keyframes navbrand {
   0% {
     transform: scale(1) rotateZ(0deg);
   }
   100% {
-    transform: scale(1.1) rotateZ(1080deg);
+    transform: scale(1.15) rotateZ(1080deg);
+
+    box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+    -webkit-box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+    -moz-box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
   }
 }
 
@@ -69,17 +76,40 @@
 @media (prefers-color-scheme: light) {
   .jumbotron {
     background-color: white !important;
+
+    box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+    -webkit-box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+    -moz-box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
   }
 }
 
-@media (prefers-color-shceme: dark) {
+@media (prefers-color-scheme: dark) {
   .jumbotron {
-    background-color: ;
+    background-color: var(--dark) !important;
+
+    box-shadow: 10px 10px 99px -20px rgba(15, 15, 15, 0.7);
+    -webkit-box-shadow: 10px 10px 99px -20px rgba(15, 15, 15, 0.7);
+    -moz-box-shadow: 10px 10px 99px -20px rgba(15, 15, 15, 0.7);
   }
 }
 
-.jumbotron {
-  box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
-  -webkit-box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
-  -moz-box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+/* Card */
+@media (prefers-color-scheme: light) {
+  .card {
+    background-color: white !important;
+
+    box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+    -webkit-box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+    -moz-box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: var(--dark) !important;
+
+    box-shadow: 10px 10px 99px -20px rgba(15, 15, 15, 0.7);
+    -webkit-box-shadow: 10px 10px 99px -20px rgba(15, 15, 15, 0.7);
+    -moz-box-shadow: 10px 10px 99px -20px rgba(15, 15, 15, 0.7);
+  }
 }
