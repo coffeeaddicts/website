@@ -4,6 +4,23 @@
   --dark: #3b3b3b;
 }
 
+/* Fonts */
+@font-face {
+  font-family: "Playfair Normal";
+  src: url("./fonts/Playfair-Display/PlayfairDisplay-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Playfair Italic";
+  src: url("./fonts/Playfair-Display/PlayfairDisplay-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
 /* Body */
 @media (prefers-color-scheme: light) {
   body {
@@ -76,20 +93,30 @@
 @media (prefers-color-scheme: light) {
   .jumbotron {
     background-color: white !important;
+    border-radius: 15px;
 
     box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
     -webkit-box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
     -moz-box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+  }
+  .jumbotron h1 {
+    font-family: "Playfair Italic", serif;
+    font-weight: 800;
+    font-style: italic;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   .jumbotron {
     background-color: var(--dark) !important;
+    border-radius: 15px;
 
     box-shadow: 10px 10px 99px -20px rgba(15, 15, 15, 0.7);
     -webkit-box-shadow: 10px 10px 99px -20px rgba(15, 15, 15, 0.7);
     -moz-box-shadow: 10px 10px 99px -20px rgba(15, 15, 15, 0.7);
+  }
+  .jumbotron h1 {
+    font-family: "Righteous", cursive;
   }
 }
 
@@ -107,6 +134,31 @@
 @media (prefers-color-scheme: dark) {
   .card {
     background-color: var(--dark) !important;
+
+    box-shadow: 10px 10px 99px -20px rgba(15, 15, 15, 0.7);
+    -webkit-box-shadow: 10px 10px 99px -20px rgba(15, 15, 15, 0.7);
+    -moz-box-shadow: 10px 10px 99px -20px rgba(15, 15, 15, 0.7);
+  }
+}
+
+/* List Group */
+@media (prefers-color-scheme: light) {
+  .list-group {
+    background-color: white !important;
+    padding: 20px;
+    border-radius: 15px;
+
+    box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+    -webkit-box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+    -moz-box-shadow: 10px 10px 99px -20px rgba(128, 128, 128, 0.7);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .list-group {
+    background-color: var(--dark) !important;
+    padding: 20px;
+    border-radius: 15px;
 
     box-shadow: 10px 10px 99px -20px rgba(15, 15, 15, 0.7);
     -webkit-box-shadow: 10px 10px 99px -20px rgba(15, 15, 15, 0.7);
